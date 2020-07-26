@@ -75,7 +75,7 @@ Std_ReturnType VDSERVO_SetRecurency(Std_ChannelIdType channelId, int rec);
 Std_ReturnType VDSERVO_GroupSetRecurency(Std_ChannelIdType *srcIds, int recurency, uint8_t nr_of_channels);
 
 Std_ReturnType VDSERVO_AngleSet(Std_ChannelIdType channelId, Std_PhyDataType angle);
-Std_ReturnType VDSERVO_AngleSet(VDSERVO_ChannelType *channelRef, Std_PhyDataType angle);
+Std_ReturnType VDSERVO_AngleSetByRef(VDSERVO_ChannelType *channelRef, Std_PhyDataType angle);
 Std_ReturnType VDSERVO_AngleAdd(Std_ChannelIdType channelId, Std_PhyDataType angle);
 Std_ReturnType VDSERVO_AngleAdd(VDSERVO_ChannelType *channelRef, Std_PhyDataType angle);
 Std_PhyDataType VDSERVO_AngleGet(Std_ChannelIdType channelId);

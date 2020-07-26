@@ -109,11 +109,11 @@ Std_ReturnType VDSERVO_AngleSet(Std_ChannelIdType channelId, Std_PhyDataType ang
 
 	VDSERVO_ChannelType *cnlRef = VDSERVO_GetChannelRef(channelId);
 
-	return VDSERVO_AngleSet(cnlRef, angle);
+	return VDSERVO_AngleSetByRef(cnlRef, angle);
 
 }
 
-Std_ReturnType VDSERVO_AngleSet(VDSERVO_ChannelType *cnlRef, Std_PhyDataType angle) {
+Std_ReturnType VDSERVO_AngleSetByRef(VDSERVO_ChannelType *cnlRef, Std_PhyDataType angle) {
 
 
 	if(cnlRef == NULL)
@@ -161,7 +161,7 @@ Std_ReturnType VDSERVO_AngleAdd(VDSERVO_ChannelType *cnlRef, Std_PhyDataType ang
 	if (cnlRef == NULL)
 		return E_NOT_OK;
 	else
-		return VDSERVO_AngleSet(cnlRef, cnlRef->targetAngle + angle);
+		return VDSERVO_AngleSetByRef(cnlRef, cnlRef->targetAngle + angle);
 
 }
 
