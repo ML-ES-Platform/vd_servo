@@ -1,28 +1,26 @@
 {
     "Components": {
-            "vd_servo": {
-                "Name": "vd_servo",
-                "git": "https://github.com/ML-ES-Platform/vd_servo.git",
-                "Path": "ESW/vd_servo/",
-                "Groups": {
-                    "vd_servo": {
-                        "Name": "vd_servo",
-                        "NameSpace": "vd_servo",
-                        "Multiplicity": "0-*",
-                        "Push": [
-                            "VDSERVO_SetAngle"
-                        ],
-                        "Pull": [],
-                        "Dependencies": [
-                            "dd_servo"
-                        ],
-                        "Channels": {
-                            "Multiplicity": "1-*",
-                            "NameSpace": "VD_SERVO"
-                        },
-                        "Defines": {}
-                    }
+        "vd_servo": {
+            "git": "https://github.com/ML-ES-Platform/vd_servo.git",
+            "Path": "ESW/vd_servo/",
+            "Groups": {
+                "vd_servo": {
+                    "NameSpace": "vd_servo",
+                    "Multiplicity": "0-*",
+                    "Push": [
+                        "VDSERVO_SetAngle"
+                    ],
+                    "Pull": [],
+                    "Dependency": [
+                        "dd_servo"
+                    ],
+                    "Channels": {
+                        "Multiplicity": "1-*",
+                        "NameSpace": "VD_SERVO"
+                    },
+                    "Defines": {}
                 }
             }
+        }
     }
 }
