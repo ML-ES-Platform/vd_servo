@@ -9,7 +9,7 @@
 #define _VD_SERVO_DEMO_H_
 
 
-#include "platform_config.h"
+#include "./PLF/platform_config.h"
 
 void	vd_servo_demo_setup(void);
 void    vd_servo_demo_loop(void);

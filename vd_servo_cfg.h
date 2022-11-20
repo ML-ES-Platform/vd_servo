@@ -9,7 +9,7 @@
 #define _VD_SERVO_CFG_H_
 
 
-#include "platform_config.h"
+#include "./PLF/platform_config.h"
 
 #ifndef VD_SERVO_CONFIG
 #define VD_SERVO_CONFIG

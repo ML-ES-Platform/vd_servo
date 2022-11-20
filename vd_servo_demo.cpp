@@ -7,8 +7,8 @@
 
 #include "ESW/dd_pca9685/dd_pca9685.h"
 #include "ESW/dd_servo/dd_servo.h"
-#include "ESW/vd_servo/vd_servo.h"
-#include <ESW/vd_servo/vd_servo_demo.h>
+#include "ESW/vd_act_servo/vd_servo.h"
+#include <ESW/vd_act_servo/vd_servo_demo.h>
 #include "BSW/os_time_trig/os_time_trig.h"
 
 #define PCA9685_PWM_FREQ 50 // Analog servos run at ~50 Hz updates

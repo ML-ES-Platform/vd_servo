@@ -59,7 +59,7 @@ Std_ReturnType VDSERVO_GroupSetup(Std_ChannelIdType *srcIds, Std_ChannelIdType *
 	return error;
 }
 
-Std_ReturnType VDSERVO_SetGroupDevSetter(Std_ChannelIdType *srcIds, Std_PhySetterType deviceSetter, uint8_t nr_of_channels)
+Std_ReturnType VDSERVO_SetGroupPushMethod(Std_ChannelIdType *srcIds, Std_PhySetterType deviceSetter, uint8_t nr_of_channels)
 {
 	Std_ReturnType error = E_OK;
 

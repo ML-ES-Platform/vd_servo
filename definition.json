@@ -1,8 +1,8 @@
 {
     "Components": {
-        "vd_servo": {
+        "vd_act_servo": {
             "git": "https://github.com/ML-ES-Platform/vd_servo.git",
-            "Path": "ESW/vd_servo/",
+            "Path": "ESW/vd_act_servo/",
             "Groups": {
                 "vd_servo": {
                     "NameSpace": "vd_servo",

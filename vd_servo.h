@@ -66,7 +66,7 @@ VDSERVO_ChannelType* VDSERVO_GetChannelRef(Std_ChannelIdType channelId);
 Std_ReturnType VD_SERVO_ChannelSetup(Std_ChannelIdType servoChannelId, Std_ChannelIdType deviceChannelId);
 Std_ReturnType VD_SERVO_SetPushMethod( Std_ChannelIdType channelId,  Std_PhySetterType SetAngle);
 Std_ReturnType VDSERVO_GroupSetup(Std_ChannelIdType *srcIds, Std_ChannelIdType *targhetIds, uint8_t nr_of_channels);
-Std_ReturnType VDSERVO_SetGroupDevSetter(Std_ChannelIdType *srcIds, Std_PhySetterType deviceSetter, uint8_t nr_of_channels);
+Std_ReturnType VDSERVO_SetGroupPushMethod(Std_ChannelIdType *srcIds, Std_PhySetterType deviceSetter, uint8_t nr_of_channels);
 
 
 
